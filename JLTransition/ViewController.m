@@ -19,11 +19,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.transitionDelagate = [JLNavControlDelegate new];
-    self.transitionDelagate.transition = @"JLDrawerTransition";
 }
 
-- (IBAction)triggerTransitionDelegate:(id)sender
+- (IBAction)JLDrawerTransitionClick:(id)sender
 {
+    self.transitionDelagate.transition = @"JLDrawerTransition";
+    self.navigationController.delegate = self.transitionDelagate;
+    [self.navigationController pushViewController:[TargetViewController new] animated:YES];
+}
+
+- (IBAction)JLFlipTransitionClick:(id)sender
+{
+    self.transitionDelagate.transition = @"JLFlipTransition";
     self.navigationController.delegate = self.transitionDelagate;
     [self.navigationController pushViewController:[TargetViewController new] animated:YES];
 }

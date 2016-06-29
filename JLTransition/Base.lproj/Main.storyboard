@@ -14,16 +14,10 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <outlet property="delegate" destination="EiW-FZ-fEa" id="2HH-Yd-K6n"/>
                         <segue destination="X1Z-Br-sne" kind="relationship" relationship="rootViewController" id="Xhh-8r-AhO"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QZu-lR-blj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="EiW-FZ-fEa" customClass="JLNavControlDelegate">
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="transition" value="JLFlipTransition"/>
-                    </userDefinedRuntimeAttributes>
-                </customObject>
             </objects>
             <point key="canvasLocation" x="-677" y="114"/>
         </scene>
@@ -39,59 +33,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlQ-5j-1DY">
-                                <rect key="frame" x="269" y="285" width="61" height="30"/>
-                                <state key="normal" title="BySegue"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0e-Tq-4cm">
+                                <rect key="frame" x="234" y="285" width="132" height="30"/>
+                                <state key="normal" title="JLDrawerTransition"/>
                                 <connections>
-                                    <segue destination="DBZ-tS-jgI" kind="push" id="4TC-4N-Raq"/>
+                                    <action selector="JLDrawerTransitionClick:" destination="X1Z-Br-sne" eventType="touchUpInside" id="grh-ij-bQP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZ3-u1-UCP">
-                                <rect key="frame" x="227" y="325" width="146" height="30"/>
-                                <state key="normal" title="ByTransitionDelegate"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pib-qO-Cjr">
+                                <rect key="frame" x="246.5" y="323" width="107" height="30"/>
+                                <state key="normal" title="JLFlipTransition"/>
                                 <connections>
-                                    <action selector="triggerTransitionDelegate:" destination="X1Z-Br-sne" eventType="touchUpInside" id="0NF-nI-kRV"/>
+                                    <action selector="JLFlipTransitionClick:" destination="X1Z-Br-sne" eventType="touchUpInside" id="OyW-fI-ivh"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.38431372549999998" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="tZ3-u1-UCP" firstAttribute="centerY" secondItem="tal-V9-ujj" secondAttribute="centerY" id="03W-2s-W1D"/>
-                            <constraint firstItem="tZ3-u1-UCP" firstAttribute="centerX" secondItem="tal-V9-ujj" secondAttribute="centerX" id="5MB-zy-WXl"/>
-                            <constraint firstItem="tZ3-u1-UCP" firstAttribute="top" secondItem="hlQ-5j-1DY" secondAttribute="bottom" constant="10" id="Aw3-nB-n1v"/>
-                            <constraint firstItem="hlQ-5j-1DY" firstAttribute="centerX" secondItem="tal-V9-ujj" secondAttribute="centerX" id="PIA-Ee-44F"/>
-                            <constraint firstItem="hlQ-5j-1DY" firstAttribute="centerY" secondItem="tal-V9-ujj" secondAttribute="centerY" id="faS-Dz-4VF"/>
+                            <constraint firstItem="pib-qO-Cjr" firstAttribute="top" secondItem="V0e-Tq-4cm" secondAttribute="bottom" constant="8" id="Nnv-i2-ZYW"/>
+                            <constraint firstItem="pib-qO-Cjr" firstAttribute="centerX" secondItem="tal-V9-ujj" secondAttribute="centerX" id="csK-PR-okl"/>
+                            <constraint firstItem="V0e-Tq-4cm" firstAttribute="centerX" secondItem="tal-V9-ujj" secondAttribute="centerX" id="hjT-sD-jqc"/>
+                            <constraint firstItem="V0e-Tq-4cm" firstAttribute="centerY" secondItem="tal-V9-ujj" secondAttribute="centerY" id="kCo-eP-wxo"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="03W-2s-W1D"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="g6z-jm-xDw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MKa-EF-sGp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="43" y="131"/>
-        </scene>
-        <!--Target View Controller-->
-        <scene sceneID="EJl-RI-Xnn">
-            <objects>
-                <viewController id="DBZ-tS-jgI" customClass="TargetViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="GX8-Jb-Odf"/>
-                        <viewControllerLayoutGuide type="bottom" id="kRl-OK-URN"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="YDQ-Zj-caK">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="V4p-Na-9j4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Y35-1X-6fY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="702" y="131"/>
         </scene>
     </scenes>
 </document>
