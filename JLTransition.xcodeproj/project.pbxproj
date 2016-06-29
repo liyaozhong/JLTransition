@@ -15,9 +15,8 @@
 		C02760E51D236F27006AF086 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C02760E31D236F27006AF086 /* LaunchScreen.storyboard */; };
 		C02760F21D236FBB006AF086 /* TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C02760F11D236FBB006AF086 /* TargetViewController.m */; };
 		C02760F51D23731D006AF086 /* JLScaleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C02760F41D23731D006AF086 /* JLScaleTransition.m */; };
-		C02760FC1D2377B3006AF086 /* JLScaleNavControlDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C02760FB1D2377B3006AF086 /* JLScaleNavControlDelegate.m */; };
 		C02761051D23B34D006AF086 /* JLFlipTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C02761041D23B34D006AF086 /* JLFlipTransition.m */; };
-		C02761081D23B385006AF086 /* JLFlipNavControlDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C02761071D23B385006AF086 /* JLFlipNavControlDelegate.m */; };
+		C027610E1D23BDE6006AF086 /* JLNavControlDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C027610D1D23BDE6006AF086 /* JLNavControlDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,12 +34,10 @@
 		C02760F11D236FBB006AF086 /* TargetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetViewController.m; sourceTree = "<group>"; };
 		C02760F31D23731D006AF086 /* JLScaleTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLScaleTransition.h; sourceTree = "<group>"; };
 		C02760F41D23731D006AF086 /* JLScaleTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLScaleTransition.m; sourceTree = "<group>"; };
-		C02760FA1D2377B3006AF086 /* JLScaleNavControlDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLScaleNavControlDelegate.h; sourceTree = "<group>"; };
-		C02760FB1D2377B3006AF086 /* JLScaleNavControlDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLScaleNavControlDelegate.m; sourceTree = "<group>"; };
 		C02761031D23B34D006AF086 /* JLFlipTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLFlipTransition.h; sourceTree = "<group>"; };
 		C02761041D23B34D006AF086 /* JLFlipTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLFlipTransition.m; sourceTree = "<group>"; };
-		C02761061D23B385006AF086 /* JLFlipNavControlDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLFlipNavControlDelegate.h; sourceTree = "<group>"; };
-		C02761071D23B385006AF086 /* JLFlipNavControlDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLFlipNavControlDelegate.m; sourceTree = "<group>"; };
+		C027610C1D23BDE6006AF086 /* JLNavControlDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLNavControlDelegate.h; sourceTree = "<group>"; };
+		C027610D1D23BDE6006AF086 /* JLNavControlDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLNavControlDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,10 +109,8 @@
 		C02760F91D23773E006AF086 /* TransistionDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				C02760FA1D2377B3006AF086 /* JLScaleNavControlDelegate.h */,
-				C02760FB1D2377B3006AF086 /* JLScaleNavControlDelegate.m */,
-				C02761061D23B385006AF086 /* JLFlipNavControlDelegate.h */,
-				C02761071D23B385006AF086 /* JLFlipNavControlDelegate.m */,
+				C027610C1D23BDE6006AF086 /* JLNavControlDelegate.h */,
+				C027610D1D23BDE6006AF086 /* JLNavControlDelegate.m */,
 			);
 			path = TransistionDelegate;
 			sourceTree = "<group>";
@@ -191,12 +186,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C02761051D23B34D006AF086 /* JLFlipTransition.m in Sources */,
-				C02761081D23B385006AF086 /* JLFlipNavControlDelegate.m in Sources */,
 				C02760F51D23731D006AF086 /* JLScaleTransition.m in Sources */,
 				C02760DD1D236F27006AF086 /* ViewController.m in Sources */,
 				C02760DA1D236F27006AF086 /* AppDelegate.m in Sources */,
-				C02760FC1D2377B3006AF086 /* JLScaleNavControlDelegate.m in Sources */,
 				C02760D71D236F27006AF086 /* main.m in Sources */,
+				C027610E1D23BDE6006AF086 /* JLNavControlDelegate.m in Sources */,
 				C02760F21D236FBB006AF086 /* TargetViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

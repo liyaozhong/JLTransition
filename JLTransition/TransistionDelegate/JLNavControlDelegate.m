@@ -1,19 +1,24 @@
 //
-//  JLFlipNavControlDelegate.m
+//  JLNavControlDelegate.m
 //  JLTransition
 //
 //  Created by joshuali on 16/6/29.
 //  Copyright © 2016年 joshuali. All rights reserved.
 //
 
-#import "JLFlipNavControlDelegate.h"
+#import "JLNavControlDelegate.h"
+#import "JLScaleTransition.h"
 #import "JLFlipTransition.h"
 
-@implementation JLFlipNavControlDelegate
+@implementation JLNavControlDelegate
+
 - (nullable id <UIViewControllerAnimatedTransitioning>) navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC
 {
-    JLFlipTransition * transition = [JLFlipTransition new];
-    transition.sequence = YES;
-    return transition;
+    if(self.transition){
+        Class transition = NSClassFromString(self.transition);
+        return [transition new];
+    }
+    return nil;
 }
+
 @end

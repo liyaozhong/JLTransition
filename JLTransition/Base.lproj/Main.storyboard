@@ -14,12 +14,16 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <outlet property="delegate" destination="EiW-FZ-fEa" id="thr-RR-hfk"/>
+                        <outlet property="delegate" destination="EiW-FZ-fEa" id="2HH-Yd-K6n"/>
                         <segue destination="X1Z-Br-sne" kind="relationship" relationship="rootViewController" id="Xhh-8r-AhO"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QZu-lR-blj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="EiW-FZ-fEa" customClass="JLScaleNavControlDelegate"/>
+                <customObject id="EiW-FZ-fEa" customClass="JLNavControlDelegate">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="transition" value="JLFlipTransition"/>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="-677" y="114"/>
         </scene>

@@ -8,17 +8,18 @@
 
 #import "ViewController.h"
 #import "TargetViewController.h"
-#import "JLFlipNavControlDelegate.h"
+#import "JLNavControlDelegate.h"
 
 @interface ViewController ()
-@property (nonatomic, strong) JLFlipNavControlDelegate * transitionDelagate;
+@property (nonatomic, strong) JLNavControlDelegate * transitionDelagate;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.transitionDelagate = [JLFlipNavControlDelegate new];
+    self.transitionDelagate = [JLNavControlDelegate new];
+    self.transitionDelagate.transition = @"JLFlipTransition";
 }
 
 - (IBAction)triggerTransitionDelegate:(id)sender

@@ -1,5 +1,5 @@
 //
-//  JLFlipNavControlDelegate.h
+//  JLNavControlDelegate.h
 //  JLTransition
 //
 //  Created by joshuali on 16/6/29.
@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 @import UIKit;
 
-@interface JLFlipNavControlDelegate : NSObject<UINavigationControllerDelegate>
-
+@interface JLNavControlDelegate : NSObject<UINavigationControllerDelegate>
+@property (nonatomic, copy) NSString * transition;
 @end
