@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.transitionDelagate = [JLNavControlDelegate new];
-    self.transitionDelagate.transition = @"JLFlipTransition";
+    self.transitionDelagate.transition = @"JLFolderTransition";
 }
 
 - (IBAction)triggerTransitionDelegate:(id)sender

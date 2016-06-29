@@ -12,7 +12,6 @@
 {
     int totalCount;
     int finishedCounter;
-    NSMutableArray *snapshots;
     id<UIViewControllerContextTransitioning> mtransitionContext;
 }
 @end
@@ -38,7 +37,7 @@
     totalCount = 0;
     CGSize size = toView.frame.size;
     
-    snapshots = [NSMutableArray new];
+    NSMutableArray *snapshots = [NSMutableArray new];
     
     CGFloat xFactor = 4.0f;
     CGFloat yFactor = xFactor * size.height / size.width;
