@@ -17,6 +17,7 @@
 		C02760F51D23731D006AF086 /* JLScaleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C02760F41D23731D006AF086 /* JLScaleTransition.m */; };
 		C02761051D23B34D006AF086 /* JLFlipTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C02761041D23B34D006AF086 /* JLFlipTransition.m */; };
 		C027610E1D23BDE6006AF086 /* JLNavControlDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C027610D1D23BDE6006AF086 /* JLNavControlDelegate.m */; };
+		C04E61711D23EE8000921AF8 /* JLDrawerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C04E61701D23EE8000921AF8 /* JLDrawerTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		C02761041D23B34D006AF086 /* JLFlipTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLFlipTransition.m; sourceTree = "<group>"; };
 		C027610C1D23BDE6006AF086 /* JLNavControlDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLNavControlDelegate.h; sourceTree = "<group>"; };
 		C027610D1D23BDE6006AF086 /* JLNavControlDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLNavControlDelegate.m; sourceTree = "<group>"; };
+		C04E616F1D23EE8000921AF8 /* JLDrawerTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLDrawerTransition.h; sourceTree = "<group>"; };
+		C04E61701D23EE8000921AF8 /* JLDrawerTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLDrawerTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,8 @@
 				C02760F41D23731D006AF086 /* JLScaleTransition.m */,
 				C02761031D23B34D006AF086 /* JLFlipTransition.h */,
 				C02761041D23B34D006AF086 /* JLFlipTransition.m */,
+				C04E616F1D23EE8000921AF8 /* JLDrawerTransition.h */,
+				C04E61701D23EE8000921AF8 /* JLDrawerTransition.m */,
 			);
 			path = Transition;
 			sourceTree = "<group>";
@@ -146,6 +151,8 @@
 				TargetAttributes = {
 					C02760D11D236F27006AF086 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = U8DVA2L62W;
+						DevelopmentTeamName = "Beijing Aixuehuisi Co., Ltd.";
 					};
 				};
 			};
@@ -187,6 +194,7 @@
 			files = (
 				C02761051D23B34D006AF086 /* JLFlipTransition.m in Sources */,
 				C02760F51D23731D006AF086 /* JLScaleTransition.m in Sources */,
+				C04E61711D23EE8000921AF8 /* JLDrawerTransition.m in Sources */,
 				C02760DD1D236F27006AF086 /* ViewController.m in Sources */,
 				C02760DA1D236F27006AF086 /* AppDelegate.m in Sources */,
 				C02760D71D236F27006AF086 /* main.m in Sources */,
@@ -340,6 +348,7 @@
 				C02760EB1D236F27006AF086 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

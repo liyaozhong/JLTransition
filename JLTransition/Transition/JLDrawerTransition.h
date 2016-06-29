@@ -1,5 +1,5 @@
 //
-//  JLFolderTransition.h
+//  JLDrawerTransition.h
 //  JLTransition
 //
 //  Created by joshuali on 16/6/29.
@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+@import UIKit;
 
-@interface JLFolderTransition : NSObject
-
+@interface JLDrawerTransition : NSObject<UIViewControllerAnimatedTransitioning>
 @end
