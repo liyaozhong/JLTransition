@@ -28,17 +28,17 @@
         NSLog(@"startAnimation! list container subviews: %@", view);
     }
     
-    [containerView addSubview:toVC.view];
+    [containerView addSubview:toView];
     
-    [[transitionContext containerView] bringSubviewToFront:fromVC.view];
+    [[transitionContext containerView] bringSubviewToFront:fromView];
     
     NSTimeInterval duration = [self transitionDuration:transitionContext];
     [UIView animateWithDuration:duration animations:^{
-        fromVC.view.alpha = 0.0;
-        fromVC.view.transform = CGAffineTransformMakeScale(0.2, 0.2);
-        toVC.view.alpha = 1.0;
+        fromView.alpha = 0.0;
+        fromView.transform = CGAffineTransformMakeScale(0.2, 0.2);
+        toView.alpha = 1.0;
     } completion:^(BOOL finished) {
-        fromVC.view.transform = CGAffineTransformMakeScale(1, 1);
+        fromView.transform = CGAffineTransformMakeScale(1, 1);
         [transitionContext completeTransition:YES];
         for(UIView * view in containerView.subviews){
             NSLog(@"endAnimation! list container subviews: %@", view);

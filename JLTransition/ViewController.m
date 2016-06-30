@@ -21,6 +21,13 @@
     self.transitionDelagate = [JLNavControlDelegate new];
 }
 
+- (IBAction)JLScaleTransitionClick:(id)sender
+{
+    self.transitionDelagate.transition = @"JLScaleTransition";
+    self.navigationController.delegate = self.transitionDelagate;
+    [self.navigationController pushViewController:[TargetViewController new] animated:YES];
+}
+
 - (IBAction)JLDrawerTransitionClick:(id)sender
 {
     self.transitionDelagate.transition = @"JLDrawerTransition";
@@ -34,5 +41,4 @@
     self.navigationController.delegate = self.transitionDelagate;
     [self.navigationController pushViewController:[TargetViewController new] animated:YES];
 }
-
 @end

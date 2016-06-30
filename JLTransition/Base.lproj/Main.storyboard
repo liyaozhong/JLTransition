@@ -41,10 +41,17 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pib-qO-Cjr">
-                                <rect key="frame" x="246.5" y="323" width="107" height="30"/>
+                                <rect key="frame" x="246" y="323" width="107" height="30"/>
                                 <state key="normal" title="JLFlipTransition"/>
                                 <connections>
                                     <action selector="JLFlipTransitionClick:" destination="X1Z-Br-sne" eventType="touchUpInside" id="OyW-fI-ivh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAZ-sJ-XmV">
+                                <rect key="frame" x="240" y="247" width="120" height="30"/>
+                                <state key="normal" title="JLScaleTransition"/>
+                                <connections>
+                                    <action selector="JLScaleTransitionClick:" destination="X1Z-Br-sne" eventType="touchUpInside" id="3eR-TK-vXy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -54,6 +61,8 @@
                             <constraint firstItem="pib-qO-Cjr" firstAttribute="centerX" secondItem="tal-V9-ujj" secondAttribute="centerX" id="csK-PR-okl"/>
                             <constraint firstItem="V0e-Tq-4cm" firstAttribute="centerX" secondItem="tal-V9-ujj" secondAttribute="centerX" id="hjT-sD-jqc"/>
                             <constraint firstItem="V0e-Tq-4cm" firstAttribute="centerY" secondItem="tal-V9-ujj" secondAttribute="centerY" id="kCo-eP-wxo"/>
+                            <constraint firstItem="V0e-Tq-4cm" firstAttribute="top" secondItem="zAZ-sJ-XmV" secondAttribute="bottom" constant="8" id="u2C-Mn-ofc"/>
+                            <constraint firstItem="zAZ-sJ-XmV" firstAttribute="centerX" secondItem="tal-V9-ujj" secondAttribute="centerX" id="wqU-b7-SHt"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="g6z-jm-xDw"/>
