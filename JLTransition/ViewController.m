@@ -41,4 +41,11 @@
     self.navigationController.delegate = self.transitionDelagate;
     [self.navigationController pushViewController:[TargetViewController new] animated:YES];
 }
+
+- (IBAction)JLWindTransitionClick:(id)sender
+{
+    self.transitionDelagate.transition = @"JLWindTransition";
+    self.navigationController.delegate = self.transitionDelagate;
+    [self.navigationController pushViewController:[TargetViewController new] animated:YES];
+}
 @end

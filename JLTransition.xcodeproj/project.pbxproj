@@ -18,6 +18,7 @@
 		C02761051D23B34D006AF086 /* JLFlipTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C02761041D23B34D006AF086 /* JLFlipTransition.m */; };
 		C027610E1D23BDE6006AF086 /* JLNavControlDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C027610D1D23BDE6006AF086 /* JLNavControlDelegate.m */; };
 		C04E61711D23EE8000921AF8 /* JLDrawerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C04E61701D23EE8000921AF8 /* JLDrawerTransition.m */; };
+		C08FAB251D276EE100BE198D /* JLWindTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C08FAB241D276EE100BE198D /* JLWindTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,8 @@
 		C027610D1D23BDE6006AF086 /* JLNavControlDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLNavControlDelegate.m; sourceTree = "<group>"; };
 		C04E616F1D23EE8000921AF8 /* JLDrawerTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLDrawerTransition.h; sourceTree = "<group>"; };
 		C04E61701D23EE8000921AF8 /* JLDrawerTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLDrawerTransition.m; sourceTree = "<group>"; };
+		C08FAB231D276EE100BE198D /* JLWindTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLWindTransition.h; sourceTree = "<group>"; };
+		C08FAB241D276EE100BE198D /* JLWindTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLWindTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 				C02761041D23B34D006AF086 /* JLFlipTransition.m */,
 				C04E616F1D23EE8000921AF8 /* JLDrawerTransition.h */,
 				C04E61701D23EE8000921AF8 /* JLDrawerTransition.m */,
+				C08FAB231D276EE100BE198D /* JLWindTransition.h */,
+				C08FAB241D276EE100BE198D /* JLWindTransition.m */,
 			);
 			path = Transition;
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 				C02760DD1D236F27006AF086 /* ViewController.m in Sources */,
 				C02760DA1D236F27006AF086 /* AppDelegate.m in Sources */,
 				C02760D71D236F27006AF086 /* main.m in Sources */,
+				C08FAB251D276EE100BE198D /* JLWindTransition.m in Sources */,
 				C027610E1D23BDE6006AF086 /* JLNavControlDelegate.m in Sources */,
 				C02760F21D236FBB006AF086 /* TargetViewController.m in Sources */,
 			);
